@@ -1,10 +1,10 @@
-#Instalação Automatizada – PJe Office + SafeSign TokenAdmin
+##Instalação Automatizada – PJe Office + SafeSign TokenAdmin##
 
 (Distribuições Debian/Ubuntu)
 
 Este repositório contém um script Bash que automatiza a instalação do PJe Office Pro e do SafeSign TokenAdmin, facilitando a configuração necessária para uso de certificados digitais em sistemas Debian, Ubuntu, Mint e derivados.
 
-#📋 O que o Script Faz
+##📋 O que o Script Faz##
 
 1. Verifica dependências
 
@@ -27,7 +27,7 @@ Cria atalho automático no menu de aplicativos e, se desejado, na área de traba
 Caso dialog ou whiptail estejam instalados, exibe uma tela de confirmação antes de prosseguir.
 
 
-#🖥️ Requisitos do Sistema
+##🖥️ Requisitos do Sistema##
 
 Distribuição: Debian, Ubuntu Mint ou derivadas.
 
@@ -40,9 +40,9 @@ sudo apt install wget unzip tar
 
 (opcional) dialog ou whiptail se quiser a interface ncurses.
 
-#🚀 Passo a Passo de Execução
+##🚀 Passo a Passo de Execução##
 
-#⚠️ Todos os comandos abaixo devem ser executados em um terminal.
+##⚠️ Todos os comandos abaixo devem ser executados em um terminal.##
 
 1. Clone o repositório:
 
@@ -72,13 +72,13 @@ Exemplo, caso você tenha clonado na sua pasta pessoal:
 
 6. Siga as instruções exibidas no terminal.
 
-#🧩 Estrutura do Repositório
+##🧩 Estrutura do Repositório##
 
 .
-├── install.sh        # Script principal de instalação
-└── README.md         # Este arquivo
+├── Instalador_safesing+pjeofficepro.sh \
+└── README.md         
 
-#⚠️ Avisos
+##⚠️ Avisos##
 
 O script baixa pacotes diretamente dos sites oficiais do PJe Office e do SafeSign.
 
@@ -86,7 +86,7 @@ Verifique a integridade/assinatura dos arquivos caso deseje maior segurança.
 
 Para usar o SafeSign é necessário possuir token e certificados digitais compatíveis com a ICP-Brasil.
 
-#📄 Licença
+##📄 Licença##
 
 Distribuído sob a licença MIT. Consulte o arquivo LICENSE
 
