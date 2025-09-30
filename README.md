@@ -73,7 +73,7 @@ $ /home/seu-usuario/nome-do-repo/Instalador_safesing+pjeofficepro.sh
 
 **🧩 Estrutura do Repositório**
 
-.
+. \
 ├── Instalador_safesing+pjeofficepro.sh \
 └── README.md         
 
