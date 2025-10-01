@@ -34,8 +34,8 @@ Permissões: acesso de superusuário (root).
 
 Pacotes necessários:
 
-sudo apt update
-sudo apt install wget unzip tar
+**sudo apt update**
+**sudo apt install git wget unzip tar**
 
 (opcional) dialog ou whiptail se quiser a interface ncurses.
 
@@ -49,7 +49,7 @@ $ git clone https://github.com/hudsonalbuquerque97-sys/Instalador-safesing-pjeof
 
 2. Entre na pasta do projeto:
 
-$ cd Instalador-safesing-pjeoffice-pro.git
+$ cd Instalador-safesing-pjeoffice-pro
 
 3. Dê permissão de execução ao script:
 
@@ -61,13 +61,9 @@ $ sudo su
 
 Digite sua senha de administrador quando solicitado.
 
-5. Execute o script informando o caminho completo:
+5. Execute o script:
 
-$ /caminho/para/o/repo/nome-do-repo/install.sh
-
-Exemplo, caso você tenha clonado na sua pasta pessoal:
-
-$ /home/seu-usuario/nome-do-repo/Instalador_safesing+pjeofficepro.sh
+./Instalador_safesing+pjeofficepro.sh
 
 6. Siga as instruções exibidas no terminal.
 
