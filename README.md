@@ -34,7 +34,7 @@ Permissões: acesso de superusuário (root).
 
 Pacotes necessários:
 
-**sudo apt update**
+**sudo apt update** \
 **sudo apt install git wget unzip tar**
 
 (opcional) dialog ou whiptail se quiser a interface ncurses.
