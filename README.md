@@ -71,7 +71,9 @@ Digite sua senha de administrador quando solicitado.
 
 . \
 ├── Instalador_safesing+pjeofficepro.sh \
-└── README.md         
+├── LICENSE
+├── README.md 
+└── pjeoffice-pro.png        
 
 **⚠️ Avisos**
 
