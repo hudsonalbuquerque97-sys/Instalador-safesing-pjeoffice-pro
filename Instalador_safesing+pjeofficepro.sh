@@ -99,9 +99,13 @@ sudo -u "$REAL_USER" unzip -o /tmp/pjeoffice-pro.zip -d "$DEST_DIR"
 PJE_SH=$(find "$DEST_DIR" -type f -iname "pjeoffice-pro.sh" | head -n 1)
 chmod +x "$PJE_SH"
 
-ICON_URL="https://oabsc.s3.sa-east-1.amazonaws.com/images/201907301559070.jpg"
+#ICON_URL="https://oabsc.s3.sa-east-1.amazonaws.com/images/201907301559070.jpg"
+#ICON_FILE="$DEST_DIR/pje-office.png"
+#sudo -u "$REAL_USER" wget -c "$ICON_URL" -O "$ICON_FILE"
+
+REPO_ICON_PATH="$(dirname "$0")/pjeoffice-pro.png"
 ICON_FILE="$DEST_DIR/pje-office.png"
-sudo -u "$REAL_USER" wget -c "$ICON_URL" -O "$ICON_FILE"
+sudo -u "$REAL_USER" cp "$REPO_ICON_PATH" "$ICON_FILE"
 
 DESKTOP_DIR=$(sudo -u "$REAL_USER" xdg-user-dir DESKTOP 2>/dev/null || echo "$REAL_HOME/Desktop")
 sudo -u "$REAL_USER" mkdir -p "$DESKTOP_DIR"
