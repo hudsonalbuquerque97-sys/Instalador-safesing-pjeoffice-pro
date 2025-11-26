@@ -1,32 +1,48 @@
-**Instalação Automatizada – PJe Office + SafeSign TokenAdmin**
+# Instalação Automatizada – PJe Office + SafeSign TokenAdmin
 
-(Distribuições Debian/Ubuntu)
+<div align="center">
 
-Este repositório contém um script Bash que automatiza a instalação do PJe Office Pro e do SafeSign TokenAdmin, facilitando a configuração necessária para uso de certificados digitais em sistemas **Debian, Ubuntu, Mint e derivados.**
+![PJe Office Linux](https://img.shields.io/badge/PJe_Office-Linux-blue?logo=linux&logoColor=white)
+![Compatível com PJe Office](https://img.shields.io/badge/Compatível_com-PJe_Office-green?style=flat-square)
+![PJe Office Linux Ready](https://img.shields.io/badge/PJe_Office-Linux_Ready-black?logo=linux)
+![Assinatura Digital](https://img.shields.io/badge/Assinatura_Digital-PJe_Office-orange)
+![PJe Office](https://img.shields.io/badge/PJe_Office-Suporte_Jurídico-9cf)
+![Linux Mint](https://img.shields.io/badge/Linux_Mint-5CFF6A?logo=linuxmint&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white)
 
-**📋 O que o Script Faz**
+**Script de instalação automática do Pje office Pro + Safesign para Linux**
 
-1. Verifica dependências
+</div>
 
-Checa e instala, se necessário, pacotes básicos como wget, unzip e tar.
+---
 
-2. Instala o PJe Office Pro
+## Distribuições Mint/Debian/Ubuntu
 
-Baixa a versão oficial mais recente.
+Este repositório contém um script Bash que automatiza a instalação do **PJe Office Pro e do SafeSign TokenAdmin**, facilitando a configuração necessária para uso de certificados digitais em sistemas **Debian, Ubuntu, Mint e derivados.**
 
-Descompacta e move os arquivos para a pasta correta no $HOME do usuário.
+## 📋 O que o Script Faz
 
-3. Instala o SafeSign TokenAdmin
+1. **Verifica dependências**
 
-Faz download do middleware SafeSign.
+- ✅ **Checa e instala**, se necessário, pacotes básicos como wget, unzip e tar.
 
-Cria atalho automático no menu de aplicativos e, se desejado, na área de trabalho.
+2. **Instala o PJe Office Pro**
 
-4. Interface opcional de confirmação
+- ✅ **Baixa** a versão oficial mais recente.
 
-Caso dialog ou whiptail estejam instalados, exibe uma tela de confirmação antes de prosseguir.
+- ✅ **Descompacta** e move os arquivos para a pasta correta no $HOME do usuário.
 
-**🖥️ Requisitos do Sistema**
+3. **Instala o SafeSign TokenAdmin**
+
+- ✅ **Faz download** do middleware SafeSign.
+
+- ✅ **Cria atalho** automático no menu de aplicativos e, se desejado, na área de trabalho.
+
+4. **Interface opcional de confirmação**
+
+- ✅ **Caso dialog ou whiptail** estejam instalados, exibe uma tela de confirmação antes de prosseguir.
+
+## 🖥️ Requisitos do Sistema
 
 Distribuição: Debian, Ubuntu Mint ou derivadas.
 
@@ -34,56 +50,65 @@ Permissões: acesso de superusuário (root).
 
 Pacotes necessários:
 
-**sudo apt update** \
-**sudo apt install git wget unzip tar**
-
+```bash
+sudo apt update
+sudo apt install git wget unzip tar
+``` 
 (opcional) dialog ou whiptail se quiser a interface ncurses.
 
-**🚀 Passo a Passo de Execução**
+## 🚀 Passo a Passo de Execução
 
-**⚠️ Todos os comandos abaixo devem ser executados em um terminal.**
+### ⚠️ Todos os comandos abaixo devem ser executados em um terminal.
 
 1. Clone o repositório:
 
-$ git clone https://github.com/hudsonalbuquerque97-sys/Instalador-safesing-pjeoffice-pro.git
+```bash
+git clone https://github.com/hudsonalbuquerque97-sys/Instalador-safesing-pjeoffice-pro.git
+```
 
 2. Entre na pasta do projeto:
-
-$ cd Instalador-safesing-pjeoffice-pro
+   
+```bash
+cd Instalador-safesing-pjeoffice-pro
+```
 
 3. Dê permissão de execução ao script:
-
-$ chmod +x Instalador_safesing+pjeofficepro.sh
+   
+```bash
+chmod +x Instalador_safesing+pjeofficepro.sh
+```
 
 4. Obtenha privilégio de superusuário (root):
-
-$ sudo su
-
+   
+```bash
+sudo su
+```
 Digite sua senha de administrador quando solicitado.
 
 5. Execute o script:
-
+   
+```bash
 ./Instalador_safesing+pjeofficepro.sh
+```
 
 6. Siga as instruções exibidas no terminal.
 
-**🧩 Estrutura do Repositório**
-
-. \
+## 🧩 Estrutura do Repositório
+```bash
+.\
 ├── Instalador_safesing+pjeofficepro.sh \
 ├── LICENSE \
 ├── README.md \
 └── pjeoffice-pro.png        
+```
 
-**⚠️ Avisos**
+## ⚠️ Avisos
 
-O script baixa pacotes diretamente dos sites oficiais do PJe Office e do SafeSign.
+- **O script baixa pacotes diretamente dos sites oficiais do PJe Office e do SafeSign.**
+- **Verifique a integridade/assinatura dos arquivos caso deseje maior segurança.**
+- **Para usar o SafeSign é necessário possuir token e certificados digitais compatíveis com a ICP-Brasil.**
 
-Verifique a integridade/assinatura dos arquivos caso deseje maior segurança.
-
-Para usar o SafeSign é necessário possuir token e certificados digitais compatíveis com a ICP-Brasil.
-
-**📄 Licença**
+## 📄 Licença
 
 Distribuído sob a licença MIT. Consulte o arquivo LICENSE
 
